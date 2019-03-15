@@ -24,20 +24,11 @@
 
     <script>
 
-        var node = null;
-        var index = 0;
-
         window.addEventListener('load', e => {
-            node =  document.querySelector('#text');
+            var node =  document.querySelector('#text');
+            node.innerHTML = PI;
             setInterval(updateDigits, 1);
         });
-
-        function updateDigits() {
-            if (index<PI.length) {
-                node.innerHTML += PI.charAt(index);
-                index += 1;
-            }
-        }
 
     </script>
 
