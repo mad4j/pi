@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <title>1.000.000 of PI digits</title>
+    <meta name="description" content="1.000.000 of PI digits">
+    <meta name="author" content="daniele.olmisani@gmail.com">
+
+    <link rel="icon" href="pi.png"/>
+    <link rel="shortcut icon" href="pi.png"/>  
+
+    <style>
+        #text {
+            width: 100%;
+            word-wrap: break-word;
+            font-family: monospace;
+            font-size: 10px;
+        }
+    </style>
+
+    <script type="text/javascript" src="pi-digits.js"></script>
+
+    <script>
+
+        var node = null;
+        var index = 0;
+
+        window.addEventListener('load', e => {
+            node =  document.querySelector('#text');
+            setInterval(updateDigits, 1);
+        });
+
+        function updateDigits() {
+            if (index<PI.length) {
+                node.innerHTML += PI.charAt(index);
+                index += 1;
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id='text'>
+    </div>  
+
+</body>
+</html>
