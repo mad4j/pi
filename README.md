@@ -1,6 +1,6 @@
 # PI
 
-![PI Day](355 _ 113.png)
+![PI Day](piday.png)
 
 [1.000.000 of PI digits.](https://mad4j.github.io/pi)
 
